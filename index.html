@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Computer Science Portfolio </title>
+  
+    </head>
+    <body>
+        <style type = "text/CSS">
+            
+            .navbarLinks{
+                background-color:red;
+                border-radius:5px;
+                border-color:violet;
+                border-width:5px;
+                text-decoration:none;
+            }
+            
+            body{
+                background-color:green;
+            }
+            
+            button{
+                border-radius:100px;
+                height:100px;
+                width:100px;
+                background-color:red;
+                color:blue;
+            }
+            
+            navbar{
+                display:block;
+                background-color:blue;
+                border-radius:20px;
+            }
+            
+            .navbarLinks:hover{
+                background-color:yellow;
+                color:red;
+            }
+            
+            a{
+                color:blue;
+            }
+            
+        </style>
+        <center>
+            <navbar>
+                <a href = "mySchool.html" class = "navbarLinks"> My School </a>
+                <a href = "myInterests.html" class = "navbarLinks">My Interests </a>
+                <a href = "myFriends.html" class = "navbarLinks">My Friends </a>
+        </navbar>
+        </center>
+        <center><h1>Welcome</h1></center>
+        <p><strong>Hello, my name is Yury.</strong> I go to Summit Denali middle school, and am currently enrolled in the Computer Science program.</p>
+        <p>In this website, you shall see a portfolio of all work that I have created over this time.</p>
+        <button type="button" onclick="projectLister()"><strong style = "font-family:Georgia;">Click Here To See All Of My Projects.</strong></button>
+        <div>
+            <strong id ="project1"></strong>
+            <br>
+            <strong id ="project2"></strong>
+        </div>
+        <script type="text/javascript">
+            function projectLister(){
+                var project1 = "Doctor Who Project: Pending"; 
+                var project1link = project1.link("https://preview.c9.io/mangostormcxc/doctor-who/Tardis.html?_c9_id=livepreview13&_c9_host=https://ide.c9.io");
+                var project2 = "The Helper: Completed";
+                var project2link = project2.link("https://preview.c9.io/thebatcoder1017/the-helper/helper.html?_c9_id=livepreview0&_c9_host=https://ide.c9.io")
+                document.getElementById('project1').innerHTML = project1link;
+                document.getElementById('project2').innerHTML = project2link
+            };
+        </script>
+    </body>
+</html>
